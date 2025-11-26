@@ -1,101 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mama Mica Peptide Dosage Calculator - Calculate the exact units to inject for your desired peptide dosage">
-    <meta name="author" content="Mama Mica">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mama Mica - Peptide Dosage Calculator</title>
-    <link rel="icon" type="image/jpeg" href="public/logo.jpg">
-    <link rel="apple-touch-icon" href="public/logo.jpg">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <header>
-            <div class="logo-container">
-                <img src="public/logo.jpg" alt="Mama Mica Logo" class="logo">
-            </div>
-            <h1>Peptide Dosage Calculator</h1>
-            <p class="subtitle">Calculate the exact units to inject for your desired peptide dosage</p>
-        </header>
-
-        <div class="calculator-card">
-            <div class="card-logo">
-                <img src="public/logo.jpg" alt="Mama Mica" class="small-logo">
-            </div>
-            <div class="input-section">
-                <h2>
-                    <span class="icon">🧪</span>
-                    Input Values
-                </h2>
-
-                <div class="input-group">
-                    <label for="vialSize">
-                        <span class="icon">💧</span>
-                        Vial Size (mg)
-                    </label>
-                    <input type="number" id="vialSize" value="20" min="0" step="0.1">
-                    <span class="helper-text">Amount of peptide in the vial</span>
-                </div>
-
-                <div class="input-group">
-                    <label for="reconstitutionVolume">
-                        <span class="icon">💧</span>
-                        Reconstitution Volume (ml)
-                    </label>
-                    <input type="number" id="reconstitutionVolume" value="2" min="0" step="0.1">
-                    <span class="helper-text">Amount of BAC water to add</span>
-                </div>
-
-                <div class="input-group">
-                    <label for="desiredDosage">
-                        <span class="icon">💉</span>
-                        Desired Dosage
-                    </label>
-                    <div class="dosage-input-wrapper">
-                        <input type="number" id="desiredDosage" value="500" min="0" step="0.1">
-                        <select id="dosageUnit">
-                            <option value="mcg">mcg</option>
-                            <option value="mg">mg</option>
-                        </select>
-                    </div>
-                    <span class="helper-text">Your target dosage per injection</span>
-                </div>
-            </div>
-
-            <div class="results-section">
-                <h2>
-                    <span class="icon">🧮</span>
-                    Results
-                </h2>
-
-                <div class="result-card main-result">
-                    <div class="result-value" id="unitsToInject">5</div>
-                    <div class="result-label">Units to Inject</div>
-                    <div class="result-helper">on your insulin syringe</div>
-                </div>
-
-                <div class="result-card">
-                    <div class="result-value" id="concentration">10 mg/ml</div>
-                    <div class="result-label">Concentration</div>
-                    <div class="result-helper" id="concentrationHelper">(100 mcg per unit)</div>
-                </div>
-
-                <div class="result-card">
-                    <div class="result-value" id="volumeToInject">0.05 ml</div>
-                    <div class="result-label">Volume to Inject</div>
-                </div>
-
-                <div class="result-card">
-                    <div class="result-value" id="dosageDisplay">500 mcg</div>
-                    <div class="result-label">Dosage</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
+    <link rel="icon" type="image/jpeg" href="/logo.jpg" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
 
