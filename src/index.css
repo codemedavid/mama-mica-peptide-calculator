@@ -19,6 +19,18 @@ body {
   overflow-x: hidden;
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 8px;
+  }
+}
+
 @keyframes backgroundShift {
   0%, 100% {
     background-position: 0% 50%;
@@ -48,9 +60,23 @@ body::before {
   width: 100%;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   position: relative;
   z-index: 1;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  #root {
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 8px 0;
+  }
 }
 
