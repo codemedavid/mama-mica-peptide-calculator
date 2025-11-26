@@ -1,0 +1,45 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dnaPattern" x="0" y="0" width="200" height="200" patternUnits="userSpaceOnUse">
+      <!-- DNA Helix Pattern -->
+      <path d="M 20 20 Q 40 40, 60 20 T 100 20 T 140 20 T 180 20" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 40 Q 40 20, 60 40 T 100 40 T 140 40 T 180 40" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 60 Q 40 80, 60 60 T 100 60 T 140 60 T 180 60" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 80 Q 40 60, 60 80 T 100 80 T 140 80 T 180 80" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 100 Q 40 120, 60 100 T 100 100 T 140 100 T 180 100" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 120 Q 40 100, 60 120 T 100 120 T 140 120 T 180 120" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 140 Q 40 160, 60 140 T 100 140 T 140 140 T 180 140" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 160 Q 40 140, 60 160 T 100 160 T 140 160 T 180 160" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+      <path d="M 20 180 Q 40 200, 60 180 T 100 180 T 140 180 T 180 180" stroke="rgba(255,255,255,0.15)" fill="none" stroke-width="2"/>
+    </pattern>
+    
+    <!-- Molecular Structure Pattern -->
+    <g id="molecule">
+      <circle cx="0" cy="0" r="3" fill="rgba(255,255,255,0.2)"/>
+      <line x1="0" y1="0" x2="15" y2="0" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="10" y2="10" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+      <line x1="0" y1="0" x2="-10" y2="10" stroke="rgba(255,255,255,0.15)" stroke-width="1.5"/>
+      <circle cx="15" cy="0" r="3" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="10" cy="10" r="3" fill="rgba(255,255,255,0.2)"/>
+      <circle cx="-10" cy="10" r="3" fill="rgba(255,255,255,0.2)"/>
+    </g>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="100" fill="#4a148c"/>
+  <circle cx="100" cy="100" r="100" fill="url(#dnaPattern)"/>
+  
+  <!-- Molecular Structures -->
+  <use href="#molecule" x="30" y="30" opacity="0.3"/>
+  <use href="#molecule" x="170" y="50" opacity="0.25" transform="rotate(45 170 50)"/>
+  <use href="#molecule" x="50" y="170" opacity="0.3" transform="rotate(-30 50 170)"/>
+  <use href="#molecule" x="150" y="150" opacity="0.25" transform="rotate(60 150 150)"/>
+  
+  <!-- Main Text: Mama Mica -->
+  <text x="100" y="90" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">Mama</text>
+  <text x="100" y="120" font-family="Georgia, serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">Mica</text>
+  
+  <!-- GLW Initials -->
+  <text x="100" y="150" font-family="Arial, sans-serif" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle" letter-spacing="4">GLW</text>
+</svg>
+

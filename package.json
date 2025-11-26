@@ -1,0 +1,14 @@
+{
+  "name": "peptide-calculator",
+  "version": "1.0.0",
+  "description": "Peptide Dosage Calculator",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": ["peptide", "calculator"],
+  "author": "",
+  "license": "MIT"
+}
+
